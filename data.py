@@ -17,9 +17,9 @@ balenie=["ks","kg","kg","kg","kg","ks","kg","kg",
 f = open("inserts_lidl.sql","a")
 for i in range(len(meno)):
     if i < len(meno) - 1:
-        f.write(f"INSERT INTO LIDL (Meno, Typ, Cena, Balenie) VALUES (\"{meno[i]}\", \"{typ[i]}\", {cena[i]}, \"{balenie[i]}\");\n")
+        f.write(f"INSERT INTO LIDL (Meno, Typ, Cena, Balenie) VALUES ('{meno[i]}', '{typ[i]}', {cena[i]}, '{balenie[i]}');\n")
     else:
-        f.write(f"INSERT INTO LIDL (Meno, Typ, Cena, Balenie) VALUES (\"{meno[i]}\", \"{typ[i]}\", {cena[i]}, \"{balenie[i]}\");")
+        f.write(f"INSERT INTO LIDL (Meno, Typ, Cena, Balenie) VALUES ('{meno[i]}', '{typ[i]}', {cena[i]}, '{balenie[i]}');")
 f.close()
 
 meno=["Cibula","Tlacenka - bravcova","Makovnik","Paprika",
@@ -39,9 +39,9 @@ balenie=["kg","kg","kg","kg","kg","ks","kg","kg",
 f = open("inserts_kaufland.sql","a")
 for i in range(len(meno)):
     if i < len(meno) - 1:
-        f.write(f"INSERT INTO KAUFLAND (Meno, Typ, Cena, Balenie) VALUES (\"{meno[i]}\", \"{typ[i]}\", {cena[i]}, \"{balenie[i]}\");\n")
+        f.write(f"INSERT INTO KAUFLAND (Meno, Typ, Cena, Balenie) VALUES ('{meno[i]}', '{typ[i]}', {cena[i]}, '{balenie[i]}');\n")
     else:
-        f.write(f"INSERT INTO KAUFLAND (Meno, Typ, Cena, Balenie) VALUES (\"{meno[i]}\", \"{typ[i]}\", {cena[i]}, \"{balenie[i]}\");")
+        f.write(f"INSERT INTO KAUFLAND (Meno, Typ, Cena, Balenie) VALUES ('{meno[i]}', '{typ[i]}', {cena[i]}, '{balenie[i]}');")
 f.close()
 
 id=[]
@@ -56,7 +56,7 @@ datum=["08.04.2022","15.04.2022","22.04.2022","29.04.2022",
 f = open("inserts_zlavy.sql","a")
 for i in range(len(id)):
     if i < len(id) - 1:
-        f.write(f"INSERT INTO ZLAVY (ID, Percento, Datum) VALUES (\"{id[i]}\", {percento[i]}, \"{datum[i]}\");\n")
+        f.write(f"INSERT INTO ZLAVY (ID, Percento, Datum) VALUES ('{id[i]}', {percento[i]}, TO_DATE('{datum[i]}','dd.mm.yyyy'));\n")
     else:
-        f.write(f"INSERT INTO ZLAVY (ID, Percento, Datum) VALUES (\"{id[i]}\", {percento[i]}, \"{datum[i]}\");")
+        f.write(f"INSERT INTO ZLAVY (ID, Percento, Datum) VALUES ('{id[i]}', {percento[i]}, TO_DATE('{datum[i]}','dd.mm.yyyy'));")
 f.close()
