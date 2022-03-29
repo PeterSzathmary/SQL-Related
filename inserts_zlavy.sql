@@ -1,0 +1,10 @@
+INSERT INTO ZLAVY (ID, Percento, Datum) VALUES ("1", 10, "08.04.2022");
+INSERT INTO ZLAVY (ID, Percento, Datum) VALUES ("2", 12, "15.04.2022");
+INSERT INTO ZLAVY (ID, Percento, Datum) VALUES ("3", 7, "22.04.2022");
+INSERT INTO ZLAVY (ID, Percento, Datum) VALUES ("4", 15, "29.04.2022");
+INSERT INTO ZLAVY (ID, Percento, Datum) VALUES ("5", 35, "06.05.2022");
+INSERT INTO ZLAVY (ID, Percento, Datum) VALUES ("6", 60, "13.05.2022");
+INSERT INTO ZLAVY (ID, Percento, Datum) VALUES ("7", 5, "20.05.2022");
+INSERT INTO ZLAVY (ID, Percento, Datum) VALUES ("8", 10, "27.05.2022");
+INSERT INTO ZLAVY (ID, Percento, Datum) VALUES ("9", 3, "03.06.2022");
+INSERT INTO ZLAVY (ID, Percento, Datum) VALUES ("10", 12, "10.06.2022");
